@@ -10,7 +10,7 @@ page 50101 "Al Supported Language List"
         {
             repeater(Group)
             {
-                field(LanguageCode;LanguageCode)
+                field(LanguageCode;Code)
                 {
                     ApplicationArea = All;                                
                 }

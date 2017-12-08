@@ -3,7 +3,7 @@ table 50101 "AI Supported Language"
 
     fields
     {
-        field(10;LanguageCode;Code[10])
+        field(10;Code;Code[10])
         {
             CaptionML = ENU = 'Language Code';
             
@@ -16,7 +16,7 @@ table 50101 "AI Supported Language"
 
     keys
     {
-        key(PK;LanguageCode)
+        key(PK;Code)
         {
             Clustered = true;
         }
