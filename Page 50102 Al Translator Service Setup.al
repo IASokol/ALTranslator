@@ -5,7 +5,7 @@ page 50102 "Al Translator Service Setup"
     Editable = true;
     InsertAllowed = false;
     DeleteAllowed = false;
-    ModifyAllowed = true;
+    ModifyAllowed = true;    
     layout
     {
         area(content)
