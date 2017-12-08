@@ -16,6 +16,10 @@ page 50102 "Al Translator Service Setup"
                 {
                     ApplicationArea = All;
                 }
+                field(URL;URL)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
