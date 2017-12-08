@@ -35,7 +35,7 @@ page 50102 "Al Translator Service Setup"
                 Image = ListPage;
                 trigger OnAction();
                 begin
-                    Page.RunModal(50101);
+                    Page.RunModal(Page::"Al Supported Language List");
                 end;
             }
         }
