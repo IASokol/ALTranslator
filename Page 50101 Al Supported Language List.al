@@ -12,11 +12,11 @@ page 50101 "Al Supported Language List"
             {
                 field(LanguageCode;LanguageCode)
                 {
-                    
+                    ApplicationArea = All;                                
                 }
                 field(Description;Description)
                 {
-                    
+                    ApplicationArea = All;                    
                 }
             }
         }
