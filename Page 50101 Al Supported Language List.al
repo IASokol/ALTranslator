@@ -1,7 +1,7 @@
 page 50101 "Al Supported Language List"
 {
     PageType = List;
-    SourceTable = "AI Supported Language";
+    SourceTable = "Al Supported Language";
     Editable = TRUE;
 
     layout

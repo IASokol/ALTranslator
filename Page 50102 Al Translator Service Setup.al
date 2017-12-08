@@ -2,8 +2,10 @@ page 50102 "Al Translator Service Setup"
 {
     PageType = Card;
     SourceTable = "Al Translator Service Setup";
-    Editable = TRUE;
-
+    Editable = true;
+    InsertAllowed = false;
+    DeleteAllowed = false;
+    ModifyAllowed = true;
     layout
     {
         area(content)
@@ -12,18 +14,25 @@ page 50102 "Al Translator Service Setup"
             {
                 field("Default Language Code";"Default Language Code")
                 {
-                    ApplicationArea = All;   
+                    ApplicationArea = All;
                 }
             }
         }
     }
-
+    
     actions
     {
         area(processing)
         {
-            action(ActionName)
+            Action("Al Supported Languages")
             {
+                CaptionML = ENU = 'Al Supported Languages';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+                ApplicationArea = all;
+                Image = ListPage;
                 trigger OnAction();
                 begin
                     Page.RunModal(50101);
@@ -33,5 +42,16 @@ page 50102 "Al Translator Service Setup"
     }
     
     var
-        myInt : Integer;
+        myInt: Integer;
+    trigger OnOpenPage();
+    var
+    
+    begin
+        RESET;
+        if not Get then begin
+            INIT;
+            Insert;
+        end;
+        
+    end;
 }

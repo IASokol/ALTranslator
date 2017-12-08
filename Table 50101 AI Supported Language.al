@@ -1,6 +1,7 @@
-table 50101 "AI Supported Language"
+table 50101 "Al Supported Language"
 {
-
+    DrillDownPageId = "Al Supported Language List";
+    LookupPageId = "Al Supported Language List";
     fields
     {
         field(10;Code;Code[10])
@@ -13,7 +14,7 @@ table 50101 "AI Supported Language"
             CaptionML = ENU = 'Description';
         }
     }
-
+    
     keys
     {
         key(PK;Code)
@@ -23,22 +24,22 @@ table 50101 "AI Supported Language"
     }
     
     var
-        myInt : Integer;
-
+        myInt: Integer;
+        
     trigger OnInsert();
     begin
     end;
-
+    
     trigger OnModify();
     begin
     end;
-
+    
     trigger OnDelete();
     begin
     end;
-
+    
     trigger OnRename();
     begin
     end;
-
+    
 }
