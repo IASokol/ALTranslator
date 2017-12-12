@@ -1,4 +1,4 @@
-codeunit 50100 "AI SalesHeader SellToCustomer"
+codeunit 50101 "AI SalesHeader SellToCustomer"
 {
     trigger OnRun();
     begin
@@ -12,7 +12,7 @@ codeunit 50100 "AI SalesHeader SellToCustomer"
         if Customer.Get(Rec."Sell-to Customer No.") then
         begin
             if Customer."AI_Language" <> '' then
-                Rec.Validate("Ship-to Code",Customer."AI_Language");
+                Rec.Validate(AI_Language,Customer."AI_Language");
         end; 
     end;
 
