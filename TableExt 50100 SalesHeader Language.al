@@ -7,6 +7,7 @@ tableextension 50100 AI_SalesHeader_Language extends "Sales Header"
             CaptionML = ENU = 'Language';                        
             TableRelation = Language.Code;
         }
+        
     }
     
 }
