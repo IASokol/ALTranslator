@@ -1,7 +1,7 @@
-table 50101 "Al Supported Language"
+table 50101 "AI Supported Language"
 {
-    DrillDownPageId = "Al Supported Language List";
-    LookupPageId = "Al Supported Language List";
+    DrillDownPageId = "AI Supported Languages List";
+    LookupPageId = "AI Supported Languages List";
     fields
     {
         field(10;Code;Code[10])

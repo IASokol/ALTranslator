@@ -10,7 +10,7 @@ page 50102 "Al Translator Service Setup"
     {
         area(content)
         {
-            group(GroupName)
+            group(General)
             {
                 field("Default Language Code";"Default Language Code")
                 {
@@ -30,32 +30,26 @@ page 50102 "Al Translator Service Setup"
         {
             Action("Al Supported Languages")
             {
-                CaptionML = ENU = 'Al Supported Languages';
+                CaptionML = ENU = 'Supported Languages';
+                RunObject = Page "AI Supported Languages List";  
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
                 PromotedOnly = true;
                 ApplicationArea = all;
                 Image = ListPage;
-                trigger OnAction();
-                begin
-                    Page.RunModal(Page::"Al Supported Language List");
-                end;
             }
         }
     }
-    
-    var
-        myInt: Integer;
-    trigger OnOpenPage();
-    var
-    
+    trigger
+        OnOpenPage();
     begin
-        RESET;
-        if not Get then begin
-            INIT;
-            Insert;
-        end;
-        
+        CreateSetupRecord        
     end;
+    procedure CreateSetupRecord()
+        begin
+            RESET;
+            if not Get then
+                Insert;
+        end;    
 }
