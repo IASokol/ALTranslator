@@ -1,8 +1,8 @@
-pageextension 50101 AI_CustomerCard_Language extends "Customer Card"
+pageextension 50101 Language_AILanguage extends Languages
 {
     layout
     {
-        addlast(General)
+        addafter(Name)
         {
             field(AI_Language;AI_Language)
             {

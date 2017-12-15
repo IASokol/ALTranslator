@@ -8,11 +8,14 @@ codeunit 50101 "AI SalesHeader SellToCustomer"
     local procedure FillLanguage(VAR Rec : Record "Sales Header";var xRec : Record "Sales Header";CurrFieldNo : Integer);
     var
         Customer : Record Customer;
+        AILanguage : Record Language;
     begin
         if Customer.Get(Rec."Sell-to Customer No.") then
         begin
-            if Customer."AI_Language" <> '' then
-                Rec.Validate(AI_Language,Customer."AI_Language");
+            if Customer."Language Code" <> '' then
+                if AILanguage.Get(Customer."Language Code") then
+                    Rec.Validate(AI_Language,AILanguage."AI_Language");
+                
         end; 
     end;
 

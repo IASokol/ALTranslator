@@ -25,8 +25,7 @@ table 50102 "Al Translator Service Setup"
         }
     }
     
-    var
-        myInt : Integer;
+    var        
 
     trigger OnInsert();
     begin
