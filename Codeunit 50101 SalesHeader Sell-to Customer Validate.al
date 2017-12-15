@@ -16,12 +16,12 @@ codeunit 50101 "AI SalesHeader SellToCustomer"
             begin
                 if AILanguage.Get(Customer."Language Code") then
                 begin
-                    Rec.Validate(AI_Language,AILanguage."AI_Language");
+                    Rec.Validate(AI_Language,AILanguage.AI_Language);
                     exit;
                 end;                    
             end;    
         end; 
         Rec.Validate(AI_Language,'');
+        exit;
     end;
-
 }
