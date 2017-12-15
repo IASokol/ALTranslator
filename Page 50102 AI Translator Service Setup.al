@@ -1,7 +1,7 @@
-page 50102 "Al Translator Service Setup"
+page 50102 "AI Translator Service Setup"
 {
     PageType = Card;
-    SourceTable = "Al Translator Service Setup";
+    SourceTable = "AI Translator Service Setup";
     Editable = true;
     InsertAllowed = false;
     DeleteAllowed = false;
@@ -24,7 +24,7 @@ page 50102 "Al Translator Service Setup"
     {
         area(processing)
         {
-            Action("Al Supported Languages")
+            Action("AI Supported Languages")
             {
                 CaptionML = ENU = 'Supported Languages';
                 RunObject = Page "AI Supported Languages List";  

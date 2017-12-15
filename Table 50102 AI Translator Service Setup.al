@@ -1,4 +1,4 @@
-table 50102 "Al Translator Service Setup"
+table 50102 "AI Translator Service Setup"
 {
 
     fields
