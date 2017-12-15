@@ -12,10 +12,6 @@ page 50102 "Al Translator Service Setup"
         {
             group(General)
             {
-                field("Default Language Code";"Default Language Code")
-                {
-                    ApplicationArea = All;
-                }
                 field(URL;URL)
                 {
                     ApplicationArea = All;
@@ -37,7 +33,7 @@ page 50102 "Al Translator Service Setup"
                 PromotedIsBig = true;
                 PromotedOnly = true;
                 ApplicationArea = all;
-                Image = ListPage;
+                Image = Language;
             }
         }
     }

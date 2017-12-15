@@ -19,13 +19,12 @@ pageextension 50100 AI_SalesOrder_Language extends "Sales Order"
                 CaptionML = ENU = 'AI Translate';
                 Promoted = true;
                 PromotedCategory = Process;
-                PromotedIsBig = true;
-                //PromotedOnly = true;
+                PromotedIsBig = true;                
                 ApplicationArea = all;
                 Image = ListPage;
                 trigger OnAction();
                 begin
-                    //Page.RunModal(Page::"Al Supported Language List");
+                    
                 end;                
             }
         }
